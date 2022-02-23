@@ -7,6 +7,6 @@ build:
     build:        
       - gradle build
 run:
-  command: gradle build
+  command: gradle bootRun
   network: 
-    port: 8000
+    port: 8080
