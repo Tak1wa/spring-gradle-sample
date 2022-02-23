@@ -1,0 +1,12 @@
+version: 1.0
+runtime: corretto11 
+build:
+  commands:
+    pre-build:
+      - sdk install gradle 7.4
+    build:        
+      - gradle build
+run:
+  command: gradle build
+  network: 
+    port: 8000
